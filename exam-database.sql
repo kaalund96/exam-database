@@ -251,7 +251,7 @@ ALTER TABLE `message`
 --
 ALTER TABLE `profile_send_gift`
   ADD CONSTRAINT `gift` FOREIGN KEY (`gift_id`) REFERENCES `gift` (`id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `reciever` FOREIGN KEY (`sender_id`) REFERENCES `profile` (`email`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `reciever` FOREIGN KEY (`reciever_id`) REFERENCES `profile` (`email`) ON UPDATE CASCADE,
   ADD CONSTRAINT `sender` FOREIGN KEY (`sender_id`) REFERENCES `profile` (`email`) ON UPDATE CASCADE;
 
 --
